@@ -1,0 +1,6 @@
+    "http.api.url": "{{ .Values.mashery_host }}/api/ngil/v1/updateGFAutolinkedAccounts",
+    "auth.type": "oauth2",
+    "batch.json.as.array": "false",
+    "behavior.on.error": "log",
+    "behavior.on.null.values": "ignore",
+    "bootstrap.servers": "kafka:9071"

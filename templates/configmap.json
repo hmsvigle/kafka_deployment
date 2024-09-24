@@ -1,0 +1,6 @@
+{
+  "name": {{ .Values.project }}-ENV-{{ .Values.appNameGeneric }},
+  "config": {
+{{ tpl (printf "configs/%s/configmap.yaml" .Values.appNameGeneric | .Files.Get) . }} 
+  }
+}
